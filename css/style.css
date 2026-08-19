@@ -239,6 +239,12 @@ p{ line-height:1.6; margin:0 0 1em; }
 .card p{ font-size:.92rem; color:#41616c; margin-bottom:.6em; }
 .card-img{ aspect-ratio:4/3; overflow:hidden; }
 .card-img img{ width:100%; height:100%; object-fit:cover; }
+.card-img img.float-effect{ animation:float-image 4s ease-in-out infinite; }
+
+@keyframes float-image{
+  0%, 100%{ transform:translateY(0); }
+  50%{ transform:translateY(-12px); }
+}
 
 /* ---------- footer ---------- */
 .site-footer{ background:var(--pool-deep); color:rgba(255,255,255,.75); padding:50px 0 30px; }
